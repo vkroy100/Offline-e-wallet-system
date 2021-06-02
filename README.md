@@ -44,7 +44,8 @@ Each transacion record has the following structure:
 3. Identifier of other device
 4. Amount
 5. Timestamp provided by the receiver
-6. Digital Signature of receiver
+6. Digital Signature of receiver 
+
 The digital money is stored as an integer in SharedPreferences, a safe and secure mechanism provided
 by Android OS to app developers. SharedPreferences of one app can not be accessed by other apps and
 users. SharedPreferences reside at a location which is private and accessible by the owning app.
