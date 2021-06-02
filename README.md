@@ -7,18 +7,23 @@ every transaction. The balance is stored locally on mobile phones rather than on
 add balance (money) to their app in exchange of physical money and can get physical money in return
 of their available balance. We have used wifi direct because it allows two devices to establish a direct
 Wi-Fi connection without requiring a wireless router.
-The application has following components : First of all is User Registration : One has to register once
+
+The application has following components : 
+
+First of all is User Registration : One has to register once
 to create their identity and certificate that is to be used by the app. User registration generates a random
 keypair for RSA (2048 bits) and a certificate signing request (CSR). This CSR is sent to a CA server for
 the app, deployed to sign the request and send it back to the user. The signed certificate helps in
 establishing the identity and authentication. This one time registration requires network connectivity.
 We have used Trust store to safely store the certificates of CA and a key store is used to store all the
 other types of certificates , private keys and password safely.
+
 So at a time we have two devices which will communicate with each other , one of them will be a
 server thread and this server thread will instantiate a socket and bind it, this thread all create a
 sendreceive thread . Similarly we have other device which is client and client thread is created in this
 which will connect to the server socket and address of which is taken from wifi- connection info. Client thread will also start a sendreceive thread. This send receive thread started by both client and server is
 used for sending and receiving the data objects.
+
 Now the two users’ app communicating will authenticate each other that whether they are having valid
 certificates or not. Now both the users will send their certificates to each other , both verify each other
 certificates if verified then each of them extracts public key from the respective certificates. Now each
