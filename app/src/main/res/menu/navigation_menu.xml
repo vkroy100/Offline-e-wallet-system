@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/home_icon2"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_recharge"
+        android:icon="@mipmap/recharge_icon"
+        android:title="Recharge" />
+    <item
+        android:id="@+id/nav_encash"
+        android:icon="@mipmap/cash_icon"
+        android:title="Encash" />
+    <item
+        android:id="@+id/nav_transaction_history"
+        android:icon="@mipmap/transaction_history_icon"
+        android:title="Transaction history" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Settings" />
+</menu>
