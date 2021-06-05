@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginReg">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80sp"
+        android:hint="PIN"
+        android:inputType="numberPassword"
+        android:id="@+id/pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pwd"
+        android:layout_marginTop="20dp"
+        android:id="@+id/login"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20dp"
+        android:id="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pwd"
+        android:layout_marginTop="80dp"
+        />
+
+</RelativeLayout>
